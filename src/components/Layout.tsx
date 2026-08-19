@@ -1,4 +1,4 @@
-import FooterBasic from '@/components/sections/footer/FooterBasic';
+import CustomFooter from '@/components/CustomFooter';
 import NavbarFloating from '@/components/ui/NavbarFloating';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 import SiteBackgroundSlot from "@/components/ui/SiteBackgroundSlot";
@@ -55,7 +55,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <SectionErrorBoundary name="footer">
-        <FooterBasic
+        <CustomFooter
       columns={[
         {
           title: "Company",
