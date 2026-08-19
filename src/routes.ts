@@ -7,4 +7,5 @@ export interface Route {
 export const routes: Route[] = [
   { path: '/', label: 'Home', pageFile: 'HomePage' },
   { path: '/technical-seo', label: 'Technical Seo', pageFile: 'TechnicalSeoPage' },
+  { path: '/video', label: 'Video', pageFile: 'VideoPage' },
 ];
