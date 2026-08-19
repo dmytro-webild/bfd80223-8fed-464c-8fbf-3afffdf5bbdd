@@ -34,7 +34,9 @@ export default function Layout() {
   {
     "name": "Process",
     "href": "#process"
-  }
+  },
+  { name: "Technical Seo", href: "/technical-seo" },
+
 ];
 
   return (
