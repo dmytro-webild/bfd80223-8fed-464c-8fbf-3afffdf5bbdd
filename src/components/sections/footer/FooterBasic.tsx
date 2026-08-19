@@ -53,8 +53,11 @@ const FooterBasic = ({
 
         <div className="w-full h-px bg-foreground/20" />
 
-        <div className="w-full flex items-center justify-between pt-5">
+        <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-4 pt-5">
           <span className="text-sm opacity-50">{leftText}</span>
+          <a href="https://www.totaldizajn.com" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition-opacity">
+            <img src="https://www.totaldizajn.com/logo.jpg" alt="Total Dizajn" className="h-8 w-auto object-contain" />
+          </a>
           <span className="text-sm opacity-50">{rightText}</span>
         </div>
       </div>
