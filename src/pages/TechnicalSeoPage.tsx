@@ -1,88 +1,24 @@
-import React from "react";
-import { routes } from "@/routes";
-import NavbarCentered from "@/components/ui/NavbarCentered";
-import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
-import FeaturesIconCards from "@/components/sections/features/FeaturesIconCards";
-import FaqSimple from "@/components/sections/faq/FaqSimple";
-import ContactCta from "@/components/sections/contact/ContactCta";
-import FooterSimple from "@/components/sections/footer/FooterSimple";
+import Button from "@/components/ui/Button";
+import HeroBackgroundSlot from "@/components/ui/HeroBackgroundSlot";
+import TextAnimation from "@/components/ui/TextAnimation";
+import ImageOrVideo from "@/components/ui/ImageOrVideo";
+import ScrollReveal from "@/components/ui/ScrollReveal";
+import FeaturesBento from "@/components/sections/features/FeaturesBento";
 
 export default function TechnicalSeoPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <NavbarCentered
-        logo="Webild SEO"
-        navItems={routes.map((r) => ({ name: r.label, href: r.path }))}
-        ctaButton={{ text: "Free SEO Audit", href: "/contact" }}
-      />
-
-      <HeroSplitKpi
-        tag="TECHNICAL SEO ARCHITECTURE"
-        title="Maximize Crawl Efficiency & Core Web Vitals"
-        description="Empower your website with enterprise-grade technical SEO audits, site speed optimization, structured data schemas, and seamless indexation."
-        primaryButton={{ text: "Request Technical Audit", href: "/contact" }}
-        secondaryButton={{ text: "Explore Features", href: "#features" }}
-        kpis={[
-          { value: "99+", label: "Google PageSpeed Score" },
-          { value: "3.2x", label: "Faster Indexation Rate" },
-          { value: "100%", label: "Schema Compliance" },
-        ]}
-        imageSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
-        textAnimation="slide-up"
-      />
-
-      <div id="features">
-        <FeaturesIconCards
-          tag="CORE CAPABILITIES"
-          title="Engineered for Search Engine Dominance"
-          description="Fix crawl errors, boost rendering speeds, and dominate search engine results with our comprehensive technical infrastructure."
-          primaryButton={{ text: "Get Started", href: "/contact" }}
-          secondaryButton={{ text: "View Case Studies", href: "/about" }}
-          features={[
-            { icon: "⚡", title: "Core Web Vitals Boost", description: "Optimize LCP, FID, and CLS scores for maximum ranking performance and ultra-fast user experiences." },
-            { icon: "🔍", title: "Crawl Budget Optimization", description: "Eliminate duplicate content, optimize robots.txt, and streamline XML sitemaps to ensure efficient crawling." },
-            { icon: "⚙️", title: "Structured Data & Schema", description: "Implement JSON-LD schemas to win rich snippets, Knowledge Graph cards, and featured results." },
-            { icon: "🛡️", title: "JavaScript SEO & SSR", description: "Ensure search engine bots render your React, Vue, and Next.js applications seamlessly with dynamic rendering." },
-            { icon: "🚀", title: "Site Architecture & Internal Links", description: "Build scalable siloing, optimized anchor text distribution, and clean canonical hierarchies." },
-            { icon: "🔒", title: "Security & HTTPS Integrity", description: "Audit SSL certificates, security headers, and redirect chains to maintain uninterrupted domain trust." },
-          ]}
-          textAnimation="slide-up"
-        />
-      </div>
-
-      <FaqSimple
-        tag="COMMON QUESTIONS"
-        title="Technical SEO FAQ"
-        description="Everything you need to know about optimizing your site's underlying code and infrastructure."
-        items={[
-          { question: "What is Technical SEO?", answer: "Technical SEO focuses on server and code optimizations that help search engine spiders crawl and index your site effectively." },
-          { question: "How does Core Web Vitals affect search rankings?", answer: "Google directly factors page loading speed, visual stability, and interactivity metrics into mobile and desktop ranking algorithms." },
-          { question: "Can you optimize JavaScript-rendered React applications?", answer: "Yes! We specialize in server-side rendering (SSR), pre-rendering, and dynamic rendering strategies for modern JS web apps." },
-          { question: "How long does a technical audit take?", answer: "Comprehensive audits are completed in 3 to 5 business days, complete with prioritized developer recommendations." },
-        ]}
-        textAnimation="slide-up"
-      />
-
-      <ContactCta
-        tag="READY TO RANK HIGHER?"
-        text="Fix your technical foundation and outrank your competitors today."
-        primaryButton={{ text: "Schedule Consultation", href: "/contact" }}
-        secondaryButton={{ text: "View Pricing", href: "/pricing" }}
-        textAnimation="slide-up"
-      />
-
-      <FooterSimple
-        brand="Webild SEO"
-        columns={[
-          { title: "Solutions", items: [{ label: "Technical SEO", href: "/technical-seo" }, { label: "Core Web Vitals", href: "/technical-seo" }] },
-          { title: "Company", items: [{ label: "About Us", href: "/about" }, { label: "Contact", href: "/contact" }] },
-        ]}
-        copyright="© 2025 Webild SEO. All rights reserved."
-        links={[
-          { label: "Privacy Policy", href: "/privacy" },
-          { label: "Terms of Service", href: "/terms" },
-        ]}
-      />
-    </div>
+    <>
+      <div data-webild-section="HeroSplit"><section aria-label="Hero section" className="relative flex items-center h-fit md:h-svh pt-25 pb-20 md:py-0"><HeroBackgroundSlot /><div className="flex flex-col md:flex-row items-center gap-12 md:gap-20 w-content-width mx-auto"><div className="w-full md:w-1/2"><div className="flex flex-col items-center md:items-start gap-3"><div className="px-3 py-1 mb-1 text-sm card rounded w-fit"><p>Automated Technical SEO</p></div><TextAnimation text="AI-Driven Crawlability & Schema Architecture" variant="fade-blur" gradientText={true} tag="h1" className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-center md:text-left text-balance" /><TextAnimation text="Eliminate indexing bottlenecks and optimize Core Web Vitals automatically. AI SEO Agency continuously audits your technical stack to drive enterprise search visibility." variant="fade-blur" gradientText={false} tag="p" className="md:max-w-8/10 text-lg md:text-xl leading-snug text-center md:text-left text-balance" /><div className="flex flex-wrap max-md:justify-center gap-3 mt-2 md:mt-3"><Button text="Start Tech Audit" href="#audit" variant="primary" /><Button text="Explore Features" href="#features" variant="secondary" animationDelay={0.1} /></div></div></div><ScrollReveal variant="fade-blur" delay={0.2} className="w-full md:w-1/2 h-100 md:h-[65vh] md:max-h-[75svh] p-2 xl:p-3 2xl:p-4 card rounded overflow-hidden"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/representations-user-experience-interface-design_23-2150038898.jpg" /></ScrollReveal></div></section></div>
+      <div data-webild-section="FeaturesBento"><FeaturesBento
+        tag="Technical Precision"
+        title="Autonomous Technical SEO Engine"
+        description="Supercharge website performance, eliminate indexing barriers, and optimize Core Web Vitals at enterprise scale."
+        primaryButton={{"text":"Audit Your Site","href":"#audit"}}
+        secondaryButton={{"text":"View Features","href":"#features"}}
+        textAnimation="fade-blur"
+        features={[{"bentoComponent":"info-card-marquee","title":"AI Crawlability & Indexing Audit","description":"Instantly identify crawl budget bottlenecks, orphan pages, and status code errors with real-time AI monitoring.","infoCards":[{"icon":"Search","label":"Crawl Efficiency","value":"99.4%"},{"icon":"Zap","label":"Indexing Speed","value":"2.4x Faster"},{"icon":"AlertTriangle","label":"Errors Resolved","value":"1,420+"},{"icon":"FileText","label":"Pages Audited","value":"2.5M"}]},{"bentoComponent":"animated-bar-chart","title":"Core Web Vitals Optimization","description":"Automate asset compression, defer render-blocking JavaScript, and achieve sub-second server responses."},{"bentoComponent":"checklist-timeline","title":"Schema & Structured Data Engine","description":"Deploy error-free JSON-LD schemas automatically for enhanced rich snippet visibility across search engines.","heading":"Schema Deployment Pipeline","subheading":"Automated validation and edge delivery","checklistItems":[{"label":"JSON-LD Generation","detail":"Auto-extract page taxonomy and entities"},{"label":"Validation Check","detail":"Pass Google Rich Results verification"},{"label":"Edge Injection","detail":"Instant publishing via CDN edge workers"}],"completedLabel":"Schema Verified"},{"bentoComponent":"tilted-stack-cards","title":"Automated Edge Fixes","description":"Push canonical redirects, header security policies, and 404 corrections directly to your edge infrastructure.","stackCards":[{"icon":"GitBranch","title":"Redirect Mapping","subtitle":"Edge Routing","detail":"Resolved 404 loops in under 10ms"},{"icon":"Code","title":"Canonical Alignment","subtitle":"Duplicate Control","detail":"Enforced self-referencing canonical tags"},{"icon":"Cpu","title":"Dynamic Rendering","subtitle":"Bot Optimization","detail":"Pre-rendered HTML served to search bots"}]}]}
+      /></div>
+      <div data-webild-section="ContactCta"><section aria-label="Contact section" className="py-20"><div className="w-content-width mx-auto"><ScrollReveal variant="fade"><div className="flex flex-col items-center gap-8 md:gap-10 py-20 px-8 rounded card"><div className="flex flex-col items-center gap-2"><div className="px-3 py-1 mb-1 text-sm card rounded w-fit"><p>Scale Your Technical SEO</p></div><TextAnimation text="Ready to eliminate crawl budget waste and automate indexing? Schedule a technical audit with our AI engineering team today." variant="fade-blur" gradientText={true} tag="h2" className="md:max-w-8/10 text-5xl 2xl:text-6xl leading-[1.15] font-semibold text-center text-balance" /><div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3"><Button text="Get Free Audit" href="#audit" variant="primary" /><Button text="Book Call" href="#contact" variant="secondary" animationDelay={0.1} /></div></div></div></ScrollReveal></div></section></div>
+    </>
   );
 }
