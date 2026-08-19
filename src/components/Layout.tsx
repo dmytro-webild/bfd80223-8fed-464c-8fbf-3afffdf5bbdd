@@ -36,6 +36,8 @@ export default function Layout() {
     "href": "#process"
   },
   { name: "Technical Seo", href: "/technical-seo" },
+  { name: "Video", href: "/video" },
+
 
 ];
 
