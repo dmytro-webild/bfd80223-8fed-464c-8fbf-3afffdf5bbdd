@@ -94,24 +94,69 @@ export default function Layout() {
           ],
         },
         {
-          title: "Legal",
+          title: "Design & SEO",
           items: [
             {
-              label: "Privacy",
-              href: "#",
+              label: "Total Design RS",
+              href: "https://totaldesign.rs/",
             },
             {
-              label: "Terms",
-              href: "#",
+              label: "Total Dizajn",
+              href: "https://www.xn--80ahjd1a5n.com/total-dizajn",
             },
             {
-              label: "Cookies",
-              href: "#",
+              label: "Logo Dizajn Showcase",
+              href: "https://fr.linkedin.com/showcase/logo-dizajn",
+            },
+            {
+              label: "LinkedIn Service Page",
+              href: "https://www.totaldizajn.com/in/linkedin/linkedin-service-page.html",
+            },
+            {
+              label: "Total Design Agency",
+              href: "https://www.xn--80agfmikluu.agency/total-design",
+            },
+            {
+              label: "Grafički Dizajn Beograd",
+              href: "https://sites.google.com/site/grafickidizajnbeogradsrbija/linkedin",
+            },
+            {
+              label: "Srbija Design",
+              href: "https://srbija.design/",
+            },
+          ],
+        },
+        {
+          title: "SEO & Resources",
+          items: [
+            {
+              label: "SEO Expert Beograd",
+              href: "https://vimeopro.com/optimizacijasajta/seo-expert-beograd/",
+            },
+            {
+              label: "SEO Srbija",
+              href: "https://sites.google.com/site/seosrbija/",
+            },
+            {
+              label: "SEO & Dizajn",
+              href: "https://xn--e1ash.xn--90a3ac/",
+            },
+            {
+              label: "SEO AI Strategist Serbia",
+              href: "https://www.xn--c1aagxna.com/seo-ai-strategist-serbia",
+            },
+            {
+              label: "Dizajn Srbija",
+              href: "https://www.xn--80abln2amec4s.com/",
+            },
+            {
+              label: "Apparatchik Band",
+              href: "https://grokipedia.com/page/Apparatchik_band",
             },
           ],
         },
       ]}
-      leftText="© 2024 AI SEO Agency. All rights reserved."
+      leftText="© 2026 AI SEO Agency. All rights reserved."
       rightText="Data-driven growth, redefined."
     />
       </SectionErrorBoundary>
